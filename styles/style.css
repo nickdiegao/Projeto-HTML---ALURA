@@ -90,7 +90,7 @@ h1{
     font-size: 24px;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    line-height: 56px; 
+    line-height: 50px; 
 } 
 
 h2 {
@@ -137,6 +137,7 @@ p{
 
 .foto-nicholas {
     width: 40%;
+    padding-left: 10%;
 }
 
 .link-simples {
