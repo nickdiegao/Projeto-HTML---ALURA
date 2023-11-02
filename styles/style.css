@@ -93,8 +93,24 @@ h1{
     line-height: 56px; 
 } 
 
+h2 {
+    font-size: 26px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    line-height: 56px; 
+}
+
 p{
     font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao-lista-conteudo {
     font-family: var(--fonte-secundaria);
 }
 
@@ -113,6 +129,11 @@ p{
     text-decoration: none;
     color: var(--cor-secundaria);
     font-weight: 600;
+}
+
+.link-simples {
+    text-decoration: underline;
+    color: var(--cor-terciaria);
 }
 
 .link:hover {
