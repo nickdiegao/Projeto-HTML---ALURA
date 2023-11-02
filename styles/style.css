@@ -176,9 +176,9 @@ p{
 
     .apresentacao-conteudo {
         width: 100%; /*Largura automatica pra se adaptar, poderia ser auto*/
-    }
+    }   
 
     .apresentacao-lista {
-        padding-left: 5%;
+        padding: 0% 5%;
     }
 }
