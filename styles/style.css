@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+
+@font-face {
+    font-family: 'Krona-one';
+    src: url(../assets/KronaOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{ /*Criaçção de variaveis*/
+    --cor-primaria: #2B3499;
+    --cor-secundaria: #FF6C22;
+    --cor-terciaria: #FF9209;
+    --cor-alternante: #FFD099;
+
+    --fonte-primaria: 'Krona-one', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0; /*A margem de todo o projeto foi resetada --> definida como 0*/
+    padding: 0; /*O espaçamento de todo o projeto foi resetado --> definido como 0*/
+}
+
+body{
+    /* height: 100vh;*/
+    box-sizing: border-box;  /* Nada sai da tela do body */
+    color: var(--cor-secundaria);
+    background: var(--cor-primaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%; /*O primeiro valor é o top, o segundo é o right, o terceiro é o bottom e o quarto é o left*/
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu-link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao{
+    display: flex; /* Torna o elemento flexivel --> flex-box*/
+    align-items: center; /*Alinha os itens no centro*/
+    justify-content: space-between; /*Cria um espaço entre os elementos da flex-box*/
+   /*margin: 10% 15%; Cria uma margem nos objetos*/
+    padding: 5% 15%;
+}
+
+.apresentacao-conteudo{
+    width: 615px; /*A largura do conteiner*/
+    display: flex;
+    flex-direction: column; /*A direção dos elementos é definido por padrão como row, horizontalmente, nesse caso está sendo transformado em coluna*/
+    gap: 40px; /*Espaçamento dos itens*/
+}
+
+.apresentacao-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.apresentacao-subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.front{
+    color: var(--cor-terciaria);
+}
+
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+h1{
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    line-height: 56px; 
+} 
+
+p{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.link {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center; /*Centraliza o conteudo dentro da flex-box*/
+    gap: 16px; /*Cria um espaço entre os elementos*/
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.link:hover {
+    background-color: var(--cor-alternante);
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
