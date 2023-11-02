@@ -41,7 +41,7 @@ body{
 .menu-link {
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
     text-decoration: none;
     color: var(--cor-terciaria);
 }
@@ -72,7 +72,7 @@ body{
 .apresentacao-subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .front{
@@ -87,21 +87,21 @@ body{
 } */
 
 h1{
-    font-size: 36px;
+    font-size: 24px;
     font-family: var(--fonte-primaria);
     font-weight: 400;
     line-height: 56px; 
 } 
 
 h2 {
-    font-size: 26px;
+    font-size: 22px;
     font-family: var(--fonte-primaria);
     font-weight: 400;
     line-height: 56px; 
 }
 
 p{
-    font-size: 24px;
+    font-size: 14px;
     font-family: var(--fonte-secundaria);
 }
 
@@ -114,21 +114,29 @@ p{
     font-family: var(--fonte-secundaria);
 }
 
+.link-imagem {
+    width: 20px;
+}
+
 .link {
     /* background-color: #22D4FD; */
     display: flex;
     justify-content: center; /*Centraliza o conteudo dentro da flex-box*/
     gap: 16px; /*Cria um espaço entre os elementos*/
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 178px;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 14px;
     font-family: var(--fonte-secundaria);
-    padding: 21.5px 0;
+    padding: 15px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-weight: 600;
+}
+
+.foto-nicholas {
+    width: 40%;
 }
 
 .link-simples {
@@ -141,11 +149,11 @@ p{
 }
 
 .rodape{
-    padding: 24px;
+    padding: 16px;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
 }
