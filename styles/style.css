@@ -24,10 +24,20 @@
     --cor-terciaria: #D2DE32;
     --cor-alternante: #A2C579; */
 
-    --cor-primaria: #004225;
+    /* --cor-primaria: #004225;
     --cor-secundaria: #F5F5DC;
     --cor-terciaria: #FFB000;
-    --cor-alternante: #477f08;
+    --cor-alternante: #477f08; */
+
+    --cor-primaria: #1C1C1C;
+    --cor-secundaria: #FA3D3B;
+    --cor-terciaria: #C6C6C6;
+    --cor-alternante: #6e6868;
+
+    /* --cor-primaria: #1c1c1c;
+    --cor-secundaria: #23714D;
+    --cor-terciaria: #F1CCBA;
+    --cor-alternante: #f7dacb; */
 
     --fonte-primaria: 'Krona-one', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -47,6 +57,10 @@ body{
 
 .cabecalho{
     padding: 2% 0% 0% 15%; /*O primeiro valor é o top, o segundo é o right, o terceiro é o bottom e o quarto é o left*/
+}
+
+.barra {
+    display: none;
 }
 
 .cabecalho-menu {
@@ -72,7 +86,7 @@ body{
 }
 
 .apresentacao-conteudo{
-    width: 50%; /*A largura do conteiner*/
+    width: 100%; /*A largura do conteiner*/
     display: flex;
     flex-direction: column; /*A direção dos elementos é definido por padrão como row, horizontalmente, nesse caso está sendo transformado em coluna*/
     gap: 40px; /*Espaçamento dos itens*/
@@ -157,11 +171,7 @@ p{
 }
 
 .foto-nicholas {
-    width: 50%;
-}
-
-.foto-curriculo {
-    width: 100%;
+    width: 40%;
 }
 
 .link-simples {
@@ -183,14 +193,65 @@ p{
     font-weight: 400;
 }
 
+/*Parte dos projetos*/
+
+.projetos__principais {
+    display: flex;
+    flex-direction: row;
+    gap: 9em;
+}
+
+.projetos__paragrafo {
+    font-size: 1em;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    box-sizing: border-box;
+    width: 60%;
+    border: 3px solid #FA3D3B;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+.projetos__imagem {
+    width: 100%;
+    border-radius: 0.9em;
+}
+
+.projetos__texto {
+    text-align: center;
+}
+
+.projetos__links {
+    color: var(--cor-terciaria);
+}
+
 @media (max-width: 1200px) {
 
     .cabecalho {
-        padding: 10%;
+        padding: 7% 5%;
     }
 
     .cabecalho-menu {
         justify-content: center;
+        gap: 10px;
+    }
+
+    .foto-nicholas {
+        width: 60%;
+    }
+
+    .menu-about {
+        text-align: center;
+    }
+
+    .barra {
+        display: block;
+        color: var(--cor-terciaria);
     }
 
     .apresentacao {
@@ -206,8 +267,20 @@ p{
         padding: 0% 5%;
     }
 
-    .foto-curriculo {
-        width: 70%;
-        margin: 0 0 0 3em;
+    .projetos__titulo {
+        text-align: center;
+    }
+
+    .projetos__paragrafo {
+        text-align: center;
+    }
+
+    .projetos__principais {
+        flex-direction: column;
+        gap: 0.4em;
+    }
+
+    .projetos {
+        width: 80%;
     }
 }
