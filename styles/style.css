@@ -284,4 +284,9 @@ p{
     .projetos {
         width: 80%;
     }
+
+    .rodape {
+        font-size: 1em;
+        padding: 0.8em;
+    }
 }
